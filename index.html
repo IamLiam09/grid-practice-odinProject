@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Grid Layout</title>
 </head>
 <body>
     <header>
-        <div class="first-header">
-            <input type="text">
-            <img src="" alt="bell icon">
-            <img src="" alt="img">
-            <p>Morgan Oakley</p>
-        </div>
-        <div class="second-header">
+        <div class="first">
+            <div class="right">
+                <img src="svgs/search.svg" alt="search icon">
+                <input type="text">
+            </div>
             <div class="left">
-                <img src="" alt="img">
-                <p>Hi there</p>
-                <h3>Morgan Oakley (@morgan)</h3>
+                <img src="svgs/bell.svg" alt="bell icon">
+                <img src="svgs/ProfilePic.jpg" alt="img" id="Profilepic">
+                <p>Morgan Oakley</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="left">
+                <div class="image">
+                    <img src="svgs/ProfilePic.jpg" alt="img" id="LargeProfilepic">
+                </div>
+                <div class="writeup">
+                    <p>Hi there,</p>
+                    <h3>Morgan Oakley (@morgan)</h3>
+                </div>
             </div>
             <div class="right">
                 <button>New</button>
@@ -30,30 +40,48 @@
     </header>
     <div class="sidebar">
         <div class="logo">
-            <img src="" alt="">
-            <p>Dashbord</p>
+            <img src="svgs/sidebarfilled/dashboard.png" alt="">
+            <p>Dashboard</p>
         </div>
         <div class="sidebar-menu-top">
-            <img src="" alt="home icon">
-            <p>home</p>
-            <img src="" alt="profile icon">
-            <p>Profile</p>
-            <img src="" alt="message icon">
-            <p>Messages</p>
-            <img src="" alt="history icon">
-            <p>Histor</p>
-            <img src="" alt="task icon">
-            <p>Tasks</p>
-            <img src="" alt="community icon">
-            <p>Communities</p>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/icons8-home.svg" alt="home icon">
+                <p>Home</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/profile.png" alt="profile icon">
+                <p>Profile</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/message.png" alt="message icon">
+                <p>Messages</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/icons8-clock.svg" alt="history icon">
+                <p>History</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/task.png" alt="task icon">
+                <p>Tasks</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/community.png" alt="community icon" id="commnunity">
+                <p>Communities</p>
+            </div>
         </div>
         <div class="sidebar-menu-bottom">
-            <img src="" alt="setting icon">
-            <p>Setting</p>
-            <img src="" alt="suppor icon">
-            <p>Support</p>
-            <img src="" alt="privacy icon">
-            <p>Privacy</p>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/" alt="setting icon">
+                <p>Setting</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/support.png" alt="suppor icon">
+                <p>Support</p>
+            </div>
+            <div class="imgcontainer">
+                <img src="svgs/sidebarfilled/privacy.png" alt="privacy icon">
+                <p>Privacy</p>
+            </div>
         </div>
     </div>
     <main>
