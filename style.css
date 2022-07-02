@@ -106,7 +106,7 @@ header .second .right button:hover{
     background-color: hsl(0, 100%, 50%);
     display: grid;
     grid-row: 1/3;
-    grid-template-rows: 0.1fr 0.2fr 0.2fr;
+    grid-template-rows: 0.1fr 0.5fr 0.2fr;
     gap: 10px;
     color: white;
     font-weight: bold;
@@ -116,7 +116,7 @@ header .second .right button:hover{
 }
 .imgcontainer{
     display: grid;
-    grid-template-columns: 0.1fr 0.5fr;
+    grid-template-columns: 0.1fr 0.9fr;
     gap: 10px;
     padding: 10px;
     align-items: center;
@@ -137,10 +137,6 @@ header .second .right button:hover{
 .imgcontainer img{
     width: 120%
 }
-/* Community width was smaller so had to give it it's own id for manipulation */
-#community{
-    width:200%
-}
 .sidebar-menu-top{
     margin: 10px 10px;
 }
@@ -150,9 +146,67 @@ header .second .right button:hover{
 /* The main section */
 main{
     grid-column: 2/3;
-    margin: 10px 15px;
+    margin: 10px 20px;
     position: relative;
-    top: 22%;
+    top: 25%;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+.projectcointainer{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    background-color: black;
+}
+.containerarticle{
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+}
+/* The announcement/trending section */
+/* The announcement */
+main .announcements .Announce-container{
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    gap: 10px;
+    height: 50%;
+    width: 80%;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 0%, 50%);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+main .announcements .Announce-container .-ann-con{
+    border-bottom: 2px solid hsl(0, 0%, 0%, 30%);
+    margin: 10px 0;
+    padding: 10px 0;
+}
+main .announcements .Announce-container .-ann-con:nth-child(3){
+    border-bottom: none;
+}
+/* trending */
+main .container-white-bottom{
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    gap: 20px;
+    height: 60%;
+    width: 80%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 0%, 50%);
+    margin-top: 10px;
+}
+main .container-white-bottom .hold-trend{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+/* The images in trending */
+main .container-white-bottom .hold-trend img{
+    width: 50px;
+    border-radius: 50px;
 }
