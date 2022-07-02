@@ -1,4 +1,3 @@
-#Grid Layout
 <h1>Admin Dashboard</h1>
 <p>It's built entirely with grid no flexbox</p>
 <h2>Layout</h2>
@@ -11,10 +10,10 @@
 <h5>Css</h5>
 <ul>
     <li>Alot of nesting was involved in majority of the grids
-    <li>
+    <li>Used auto-fill and repeat for the columns and rows
 </ul>
 <h2>Note</h2>
 <ul>
     <li>Made sure I did my best in creating a replica
-    <li>Continously looked at the original and my work severally
+    <li>Great practice for grid
 
