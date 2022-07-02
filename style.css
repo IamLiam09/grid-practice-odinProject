@@ -21,6 +21,7 @@ header{
     left: 16.5%;
     width: 80%;
     box-shadow: 1px 1px 7px black;
+    z-index: 1;
 }
 header .first{
     display: grid;
@@ -113,6 +114,7 @@ header .second .right button:hover{
     position: fixed;
     width: 17%;
     height: 100%;
+    z-index: 2;
 }
 .imgcontainer{
     display: grid;
@@ -146,22 +148,48 @@ header .second .right button:hover{
 /* The main section */
 main{
     grid-column: 2/3;
-    margin: 10px 20px;
+    margin: 2px 20px;
     position: relative;
-    top: 25%;
+    top: 23%;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
-.projectcointainer{
+main .projectcointainer{
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-    background-color: black;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
 .containerarticle{
-    width: 100%;
-    height: 100%;
-    background-color: gold;
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 8px solid gold;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 0%, 50%);
+}
+/* The font-size of container article */
+.containerarticle h4{
+    font-size: 1.3rem;
+}
+.containerarticle p{
+    font-size: 1rem;
+}
+/* The icons at the end of the article */
+.containerarticle .container-icon{
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 20px;
+    justify-content: end;
+    /* background-color: black; */
 }
 /* The announcement/trending section */
 /* The announcement */
@@ -176,12 +204,19 @@ main .announcements .Announce-container{
     background-color: white;
     box-shadow: 1px 1px 5px hsl(0, 0%, 0%, 50%);
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 main .announcements .Announce-container .-ann-con{
     border-bottom: 2px solid hsl(0, 0%, 0%, 30%);
     margin: 10px 0;
     padding: 10px 0;
+}
+main .announcements .Announce-container .-ann-con h4{
+    font-size: 0.9rem;
+    padding: 2px;
+}
+main .announcements .Announce-container .-ann-con p{
+    font-size: 0.9rem;
 }
 main .announcements .Announce-container .-ann-con:nth-child(3){
     border-bottom: none;
@@ -191,13 +226,13 @@ main .container-white-bottom{
     display: grid;
     grid-template-rows: repeat(4 1fr);
     gap: 20px;
-    height: 60%;
+    height: 40%;
     width: 80%;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px hsl(0, 0%, 0%, 50%);
-    margin-top: 10px;
+    margin-top: 8px;
 }
 main .container-white-bottom .hold-trend{
     display: grid;
@@ -209,4 +244,11 @@ main .container-white-bottom .hold-trend{
 main .container-white-bottom .hold-trend img{
     width: 50px;
     border-radius: 50px;
+}
+/* The font-size of trending */
+main .container-white-bottom .hold-trend .word-house h4{
+    font-size: 0.9rem;
+}
+main .container-white-bottom .hold-trend .word-house p{
+    font-size: 0.9rem;
 }
